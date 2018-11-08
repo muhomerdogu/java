@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Fist {
+
+	public static void main(String[] args)
+	{
+		Scanner keyboardEnter=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		System.out.println("İlk işlem yapılacak sayıyı giriniz: ");
+		double a=keyboardEnter.nextDouble();
+		System.out.println("İkinci işlem yapılacak sayıyı giriniz: ");
+		double b=keyboardEnter.nextDouble();
+		Toplama x=new Toplama();
+		Cikarma y=new Cikarma();
+		Carpma z=new Carpma();
+		Bolme m=new Bolme();
+		System.out.println("Girdiğiniz ilk sayınız: "+a+" ikinci sayınız ise :"+b);
+		System.out.println("Girdiğiniz sayıların toplamı:  "+x.toplama(a,b));
+		System.out.println("Girdiğiniz sayıların farkı:  "+y.cikarma(a,b));
+		System.out.println("Girdiğiniz sayıların çarpımı:  "+ z.carpma(a, b));
+		System.out.println("Girdiğiniz sayıların bölümü:  "+m.bolme(a,b));
+		
+	}
+
+	public static class Toplama
+	{
+		public double toplama(double a, double b)
+		{
+			return a+b;
+		}
+		
+	}
+	public static class Cikarma
+	{
+		public double cikarma(double a, double b)
+		{
+			return a-b;
+		}
+		
+	}
+	public static class Carpma
+	{
+		public double carpma(double a, double b)
+		{
+			return a*b;
+		}
+		
+	}
+	public static class Bolme
+	{
+		public double bolme(double a, double b)
+		{
+			if(a==0.0||b==0)
+			{
+				return 0;
+			}
+			else 
+				return a/b;
+		}
+		
+	}
+}
+
+/*
+İlk işlem yapılacak sayıyı giriniz: 
+10.351311311
+İkinci işlem yapılacak sayıyı giriniz: 
+32132165131.313213
+Girdiğiniz ilk sayınız: 10.351311311 ikinci sayınız ise :3.2132165131313213E10
+Girdiğiniz sayıların toplamı:  3.2132165141664524E10
+Girdiğiniz sayıların farkı:  -3.2132165120961903E10
+Girdiğiniz sayıların çarpımı:  3.3261004437068225E11
+Girdiğiniz sayıların bölümü:  3.221479557539219E-10
+*/
