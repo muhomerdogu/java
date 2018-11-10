@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Test_1;
+
+/**
+ *
+ * @author OMERDOGU
+ */
+public class Profesor {
+    protected int ayak_sayisi=2;
+    public void insan(){
+        System.out.println("Her proffessör bir insandır ve aynı zamanda öğrenci geçmişi vardır.");
+    }
+    public static void main(String args[]){
+       Profesor pi=new Profesor();
+       pi.insan();
+    }
+    
+}
+class Ogrenci extends Profesor{
+    public static void main(String [] args){
+        Ogrenci og=new Ogrenci();
+        og.insan();
+        System.out.println("Ayak Sayısı:"+og.ayak_sayisi);
+    }
+}
+//run:
+//Her proffessör bir insandır ve aynı zamanda öğrenci geçmişi vardır.
+//BUILD SUCCESSFUL (total time: 0 seconds)
