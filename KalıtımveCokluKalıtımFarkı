@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Test_1;
+
+/**
+ *
+ * @author OMERDOGU
+ */
+class Animal{
+    public Animal(){
+        System.out.println("The class is Animals");
+    }
+}
+class Dog extends Animal{
+    public Dog(){
+        System.out.println("The class is Dogs");
+    }
+    
+}
+class Kangal extends Dog{
+    public Kangal(){
+        System.out.println("The dog is Sivas Kangal dog");
+    } 
+
+}
+public class FirstValue {
+    public static void main(String args []){
+        Animal z=new Animal();
+        Dog y=new Dog();
+ 
+        Kangal x=new Kangal();
+        
+        
+        
+    }
+    
+    
+}
