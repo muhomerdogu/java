@@ -1,0 +1,62 @@
+/**
+ * 
+ */
+package Test_1;
+
+/**
+ * @author OMERDOGU
+ *
+ *
+ */
+
+class Book{
+	public int pageNumbers() {
+		System.out.println("Book-PageNumber()");
+		return 40;
+	}
+	public double price() {
+		System.out.println("Book- Price()");
+		return 250;
+	}
+	public String writerNames() {
+		System.out.println("Book -writeName()");
+		return "Aldırma Omer";
+	}
+}
+public class Test_2 extends Book{
+
+	/**
+	 * 
+	 */
+	public Test_2() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Book m=new Book();
+		int page=m.pageNumbers();
+		double price=m.price();
+		String writer=m.writerNames();
+		System.out.println(page);
+		System.out.println(writer);
+		System.out.println(price);
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+Book-PageNumber()
+Book- Price()
+Book -writeName()
+40
+Aldırma Omer
+250.0
+*/
