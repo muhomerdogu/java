@@ -1,0 +1,37 @@
+package Test_1;
+class Box{
+	int deger=0;
+	
+}
+public final class FinallyExample {
+
+	final int X_STATIC=100;
+	final static double Y_STATIC=3.14;
+	final int A_STATIC=(int)(Math.random()*100);
+	final Box k=new Box();
+	public FinallyExample() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FinallyExample kk=new FinallyExample();
+		System.out.println(kk.k.deger);
+		System.out.println(kk.X_STATIC);
+		System.out.println(kk.Y_STATIC);
+		System.out.println("Kutu.i"+kk.k.deger);
+		
+	
+
+	}
+	
+	/*
+	 * 0
+100
+3.14
+Kutu.i0
+*/
+	 
+
+}
