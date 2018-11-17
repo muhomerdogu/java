@@ -1,0 +1,28 @@
+package Test_1;
+class Human{
+	public Human(int par) {
+		System.out.println("Human Constructor");
+	}
+}
+class AI extends Human{
+	public AI(int par) {
+		super(par+1); //dikkat
+		System.out.println("AI Human and machine to Human..");
+	}
+}
+class HackerHuman{
+ 
+}
+public class Test_1 {
+	public Test_1(int par) {
+		super(); //dikkat
+		System.out.println("Hacker Human AI");
+	
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test_1 hck=new Test_1(5);
+		
+	}
+
+}
