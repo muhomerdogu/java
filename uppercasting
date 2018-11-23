@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package test_1;
+
+/**
+ *
+ * @author Ders
+ */
+
+class Test_2{
+    public void selamVer(){
+        System.out.println("Hello, Generally myBro.");
+    }
+}
+class Test_3{
+    public void selamVer(){
+        System.out.println("Hello, small baby");
+    }
+}
+class Test_4{
+    public void selamVer(){
+        System.out.println("Hello, dear uplevel");
+    }
+}
+public class Test_1 {
+    public static void hazir(Test_2 a){
+        a.selamVer();
+    }
+    
+    
+    public static void main(String[] args) {
+        Test_2 x=new Test_2();
+        Test_3 y=new Test_3();
+        Test_4 z=new Test_4();
+        hazir(x); //not use upcasting
+        hazir(y); // upcasting 
+        hazir(z); //latebinding  
+       
+       
+        
+            
+
+//System.out.println("ÖMER DOĞU");
+        // TODO code application logic here
+    }
+    
+}
