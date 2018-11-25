@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package API;
+
+/**
+ * @author OMERDOGU
+ *
+ */
+public class Test_3 {
+
+ class Hayvan{
+	 public void avYakala() {
+		 System.out.println("Hayvan avını yakalar.");
+	 }
+ }
+ 
+class Kartal extends Hayvan{
+	public void avYakala() {
+		System.out.println("Kartal hayvdandır ve Kartal avlanır.");
+	}
+}
+
+class Timsah extends Hayvan{
+	public void avYakala() {
+		System.out.println("Timsah bir hayvan ve Timsah avlanır.");
+	}
+	
+}
+	public Test_3() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static  Hayvan rsec() {
+		int sec=(int)(Math.random()*3);
+		Hayvan x = null;
+		if(sec==0) 
+		{
+			 
+			x=new Hayvan();
+			
+		}
+		if(sec==1) {
+			x=new Kartal();
+			
+		}
+		if(sec==2) {
+			x=new Timsah();
+		}
+		 
+		return x;
+	 
+		
+	}
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Hayvan[] h=new Hayvan[3];
+		for (int i=0;i<3;i++) {
+			h[i]=rsec(); //upcasting
+			
+		}
+		for(int i=0;i<=2;i++) {
+			h[i].avYakala(); //!
+		}
+		
+		
+ 
+		
+		
+	}
+
+}
