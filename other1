@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+package API;
+
+/**
+ * @author OMERDOGU
+
+ *
+ */
+
+class Kedi {
+	public void yakalaAv() {
+		System.out.println("Kedi Sınıfı Avını yakaladı");
+		
+	}
+}
+class Kaplan extends Kedi{
+	public static void goster(Kedi k) {
+		k.yakalaAv();
+	}
+	public void yakalaAv() {
+		System.out.println("Kaplan sınıfı Avını yakaladı.");
+	}
+	public static void main(String [] args) {
+		Kedi k=new Kedi();
+		Kaplan kp=new Kaplan();
+		goster(k);
+		goster(kp);  //upcasting 
+	}
+}
+public class KediKaplan {
+
+	/**
+	 * 
+	 */
+	public KediKaplan() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// OMERDOGU.COM		
+		
+
+	}
+
+}
