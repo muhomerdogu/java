@@ -1,0 +1,71 @@
+/**
+ * 
+ */
+package API;
+
+/**
+ * @author OMERDOGU
+
+ *
+ */
+
+ class Asker{
+	public Asker() {
+		
+		
+	}
+	public void selamVer() {
+		
+	}
+}
+class Er extends Asker{
+	public void selamVer() {
+		System.out.println("Her Er bir askerdir.");
+	}
+}
+class Yuzbasi extends Asker{
+	public void selamVer() {{
+		System.out.println("Her Yüzbaşı bir askerdir.");
+	}
+	}
+	
+}
+class Albay extends Asker{
+	public void selamVer() {{
+		System.out.println("Her Albay bir askerdir.");
+	}
+}
+class Yarbay extends Asker{
+	public Yarbay() {
+		
+	}
+		public void selamVer() {
+			System.out.println("Her Albay bir askerdir.");
+		}
+	}
+}
+
+	
+public class PolimorfizmExampleBir {
+
+	/**
+	 * 
+	 */
+	public PolimorfizmExampleBir() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// OMERDOGU.COM		
+
+		Asker a=new Asker();
+		 
+		
+	
+	}
+
+}
