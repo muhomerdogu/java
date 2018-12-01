@@ -1,0 +1,72 @@
+/**
+ * 
+ */
+package API;
+
+/**
+ * @author OMERDOGU
+ *
+ */
+class XModel{
+	public void sesAc() {
+		System.out.println("X model tv de Ses açıldı.");
+	}
+	public void sesKapat() {
+		System.out.println("X model tv de  Ses kapandı.");
+	}
+	public void kanalDegistir() {
+		System.out.println("X model tv de  Kanal değiştirildi.");
+	}
+}
+class YModel extends XModel{
+	public void sesAc() {  //iptal etme override
+		System.out.println("Y model tv de Ses açıldı.");
+	}
+	public void sesKapat() { //iptal etme override
+		System.out.println("Y model tv de  Ses kapandı.");
+	}
+	public void kanalDegistir() { //iptal etme override
+		System.out.println("Y model tv de  Kanal değiştirildi.");
+	}
+	public void teletex() { //yeni modele ekleme yapıldı. 
+		System.out.println("Y model tv de  teleteks özelliği eklendi. ");
+	}
+	
+}
+public class TV {
+
+	/**
+	 * 
+	 */
+	public TV() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//upcasting 
+		XModel x_model=new YModel();
+		YModel y_model=new YModel();
+		
+		x_model.sesAc();
+		x_model.sesKapat();
+		x_model.kanalDegistir();
+		y_model.teletex(); //x_model.teletex();// çalışmaz. 
+		
+		
+		
+		// TODO Auto-generated method stub
+		// OMERDOGU.COM		
+
+	}
+
+}
+/*
+Y model tv de Ses açıldı.
+Y model tv de  Ses kapandı.
+Y model tv de  Kanal değiştirildi.
+Y model tv de  teleteks özelliği eklendi. 
+
+*/
