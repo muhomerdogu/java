@@ -1,0 +1,87 @@
+/**
+ * 
+ */
+package API;
+abstract class Calisan{
+	public String pozisyon="Çalışan";
+	public abstract void calis(); //abstract method;
+	public void zamIste() {
+		//not abstract method;
+		System.out.println("Çalışan zam istermesi:");
+	}
+}
+ class Mudur extends Calisan{
+	public Mudur() {
+		pozisyon="Müdür";
+	}
+	public void calis() {  //override
+		System.out.println("Müdür çalışma yapamaktadır.");
+	}
+	
+}
+ 
+ class Programcı extends Calisan{
+	public Programcı() {
+		pozisyon="Programcı";
+	}
+	public void calis() {  //override
+		System.out.println("Programcı çalışma yapamaktadır.");
+	}
+	public void zamIste() {
+		System.out.println("Programcı zam ister");
+	}
+	
+}
+ class Pazarlamacı extends Calisan{
+	public Pazarlamacı() {
+		pozisyon="Pazarlamacı";
+	}
+	public void calis() {  //override
+		System.out.println("Pazarlamacı çalışma yapamaktadır.");
+	}
+	public void zamIste() {
+		System.out.println("Pazarlamacı zam ister");
+	}
+	
+}
+/**
+ * @author OMERDOGU
+ *
+ */
+public class AbIsYeri {
+
+	/**
+	 * 
+	 */
+	public static void mesaiBasla(Calisan [] c) {
+		for(int i=0;i<c.length;i++) {
+			c[i].calis();  //dikkat
+			
+		}
+		
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Calisan[] c=new Calisan[3];
+		c[0]=new Programcı(); //yukarı çevrim
+		c[1]=new Pazarlamacı(); //upcasting;
+		c[2]=new Mudur();
+		mesaiBasla(c);
+		// TODO Auto-generated method stub
+		// OMERDOGU.COM		
+		
+	}
+
+}
+
+
+/*
+ * Programcı çalışma yapamaktadır.
+Pazarlamacı çalışma yapamaktadır.
+Müdür çalışma yapamaktadır.
+
+
