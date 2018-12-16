@@ -1,0 +1,32 @@
+package Test_1;
+
+public class Bicycle {
+
+    int cadence =10;
+    int speed = 150;
+    int gear = 10;
+
+    void changeCadence(int newValue) { //yeni değeri atıyor. 
+         cadence = newValue;
+    }
+
+    void changeGear(int newValue) {
+         gear = newValue;
+    }
+
+    void speedUp(int increment) { //artırma yaıyor. 
+         speed = speed + increment;   
+    }
+
+    void applyBrakes(int decrement) { //azaltma yapaıyor
+         speed = speed - decrement;
+    }
+
+    void printStates() {
+         System.out.println("cadence:" +
+             cadence + " speed:" + 
+             speed + " gear:" + gear);
+    }
+
+	
+}
