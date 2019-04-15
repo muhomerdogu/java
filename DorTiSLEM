@@ -62,5 +62,25 @@ public class Test_1
     }
 }
     
- 
-    
+ /*
+ *
+cd D:\Users\OMER DOGU\Document\NetBeansProjects\Test_2; "JAVA_HOME=C:\\Program Files\\Java\\jdk-12" cmd /c "\"\"C:\\Program Files\\incubating-netbeans-11.0-bin_2\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.args=\"-classpath %classpath Test_2.Test_1\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk-12\\bin\\java.exe\" -Dexec.classpathScope=runtime -Dmaven.ext.class.path=\"C:\\Program Files\\incubating-netbeans-11.0-bin_2\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 org.codehaus.mojo:exec-maven-plugin:1.5.0:exec -Dcurrent.jrebel.agent.path=C:\\Users\\OMERDO~1\\AppData\\Local\\Temp\\.jr16A20C8485F\\jrebel.jar\""
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building Test_2 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- exec-maven-plugin:1.5.0:exec (default-cli) @ Test_2 ---
+Lütfen ilk say?y? giriniz: 
+100
+Lütfen ikinci say?y? giriniz: 
+150
+?ki say?n?n toplam?:250.0
+?ki say?n?n fark?:-50.0
+?ki say?n?n çarp?m?: 15000.0
+?ki say?n?n bölümü:250.0
+Dört i?lem sona ermi?ti. Bilginize Ömer DO?U Programc?
+----------------------------------------------------------
+*/
