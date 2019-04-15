@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Test_2;
+ 
+import java.util.Scanner;
+
+
+
+/**
+ *
+ * @author OMER DOGU
+ */
+public class Test_1   
+{
+    public static double toplamaYap(double x1,double x2)
+    {
+        double x3=x1;
+        double x4=x2;
+        return (x3+x4);   //double döndürmesi için double fonksiyon olması gerekmektedir.  ama içindeki tanımlananlar double olabilmekteidr 
+    }
+    public static double cikarmaYap(double x1,double x2)
+    {
+        double x3=x1;
+        double x4=x2;
+        return (x3-x4);   //double döndürmesi için double fonksiyon olması gerekmektedir.  ama içindeki tanımlananlar double olabilmekteidr 
+    }
+    public static double carpmaYap(double x1,double x2)
+    {
+        double x3=x1;
+        double x4=x2;
+        return (x3*x4);   //double döndürmesi için double fonksiyon olması gerekmektedir.  ama içindeki tanımlananlar double olabilmekteidr 
+    }
+    public static double bolmeYap(double x1,double x2)
+    {
+        if(x1==0|x2==0)
+            return 0;
+        else
+        {
+             double x3=x1;
+             double x4=x2;
+             return (x3+x4);   //double döndürmesi için double fonksiyon olması gerekmektedir.  ama içindeki tanımlananlar double olabilmekteidr 
+        }
+    }
+    public static void main(String [] args )
+    {
+        Test_1 y=new Test_1();
+        Scanner x=new Scanner(System.in);
+        System.out.println("Lütfen ilk sayıyı giriniz: ");
+        double x1=x.nextDouble();
+        System.out.println("Lütfen ikinci sayıyı giriniz: ");
+        double x2=x.nextDouble();
+        System.out.println("İki sayının toplamı:"+toplamaYap(x1,x2));
+        System.out.println("İki sayının farkı:"+cikarmaYap(x1,x2));
+        System.out.println("İki sayının çarpımı: "+carpmaYap(x1,x2));
+        System.out.println("İki sayının bölümü:"+bolmeYap(x1,x2));
+        System.out.println("Dört işlem sona ermişti. Bilginize Ömer DOĞU Programcı");
+      
+     
+    }
+}
+    
+ 
+    
