@@ -1,0 +1,32 @@
+package Test_1;
+
+import java.util.Scanner;
+
+public class Test_8 {
+	public static void main(String[] args) {
+			System.out.println("3>5 ifadesinin degeri .."+(3>5));
+	        System.out.println("3<5 ifadesinin degeri .."+(3<5));
+	        System.out.println("3!=5 ifadesinin degeri .."+(3!=5));
+	        System.out.println("5==5 ifadesinin degeri .."+(5==5));
+	        System.out.println("5>=4 ifadesinin degeri .."+(5>=4));
+	        System.out.println("-1<0 ifadesinin degeri .."+(-1<0));
+	        /*
+	         * 3>5 ifadesinin degeri ..false
+3<5 ifadesinin degeri ..true
+3!=5 ifadesinin degeri ..true
+5==5 ifadesinin degeri ..true
+5>=4 ifadesinin degeri ..true
+-1<0 ifadesinin degeri ..true
+	         */
+	        Scanner giris=new Scanner(System.in);
+	        int girilenSayi=0;
+	        
+	        System.out.println("Bir sayi giriniz: ");
+	        girilenSayi=giris.nextInt();
+	        
+	        if(girilenSayi==7){
+	            System.out.println("Girdiginiz sayi 7'dir.");
+	}
+
+	}
+}
