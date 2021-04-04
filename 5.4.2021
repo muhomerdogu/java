@@ -1,0 +1,33 @@
+package Test_1;
+
+import java.util.Scanner;
+
+public class Test_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner giris = new Scanner(System.in); 
+	      double x, f, g; 
+	      System.out.println("Bir sayi giriniz: "); 
+	      x = giris.nextDouble(); 
+	      if (x > 0.0) 
+	       { 
+	        f = 1.0 / (1.0 + Math.log(x)); g = 1.0 / (x + Math.log(x)); 
+	       } 
+	      else 
+	      { 
+	       f = 1.0 / (1.0 + x * x); g = 1.0 / (1.0 + x + x * x); 
+	      } 
+	      System.out.println("\nf(x)=" + f); 
+	      System.out.println("\ng(x)=" + g); 
+	    //  Bir sayi giriniz: 
+	    	//  10
+
+	    //	  f(x)=0.30279310656411385
+
+	    //	  g(x)=0.08128372959350388
+
+	}
+
+}
