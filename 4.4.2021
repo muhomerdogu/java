@@ -1,0 +1,35 @@
+package Test_1;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Test_4 {
+
+	public static void main(String[] args) {
+
+		     Scanner giris = new Scanner(System.in); 
+		     double satis, ucret; //DecimalFormat tipiyle özel biçimlerde sayılar gösterebilirsiniz. 
+		     DecimalFormat nf = new DecimalFormat("###,###.00"); 
+		     System.out.println("Gunluk kac tane urun satiyorsunuz? "); 
+		     satis = giris.nextDouble(); 
+		     if (satis < 50) 
+		      { 
+		       ucret = 15.0 + satis * 1.0; 
+		      } 
+		     else 
+		      { 
+		       ucret = 15.0 + 50 * 2.0 + (satis - 50) * 3.0; 
+		      } 
+		     System.out.println("Buna gore gunluk ucretiniz: "+nf.format(ucret)+" TL"); 
+		     
+		     // TODO Auto-generated method stub
+		     /*
+		      * Gunluk kac tane urun satiyorsunuz? 
+100
+Buna gore gunluk ucretiniz: 265,00 TL
+
+		      */
+
+	}
+
+}
